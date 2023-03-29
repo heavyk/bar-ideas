@@ -16,6 +16,8 @@
     - but little kathleen, would always stay [in the castle?]
   - drowned in the pond
   - dead for 7 years
+  - quite possibly a reference to (or foil of) "[countess cathleen](https://en.wikipedia.org/wiki/The_Countess_Cathleen)" by william butler yeats
+    - a woman that sold her soul to the devil to save others from starvation. when she dies, it's determined that her intentions were altrusistic, and so therefore she ascends to heaven.
 - billy (richard's brother) - (bart, in real life married to kane)
   - comes to get kay because richard is busy making statues
   - has an older brother (john -- another one?)
