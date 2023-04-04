@@ -78,3 +78,21 @@ it'd also be cool if the stremer could get tips from certain respected viewers, 
 ### 2023-04-02 00:07 - symbolic commander
 
 this is a standalone electron package with your basic server setup to build a vue interface and dislay things in it. I connect in node to the spring server over some kind of socket connecttion. I put the datas that I want into the interface with a number of queries. I want to make a number of buttons and stuff that I can press which perform actions inside of the game -- like select all idle cons inside screen. one hand is on my mouse, which is moving the screen and has zoom capability.  my other hand is pressing the touchscreen in front of me on the electron app sending commands there. I never clock in any units with my mouse. I suppose the buttons can perhaps be bound to camera hotkeys like "look at main action" or "look at group 1" etc. I suppose also, it both could be controlled by one or more people: one watcher and others executing commands based on the data they're querying from the game like current metal/energy stats and telling cons to do things like build fusions or metal extractors, etc. this style of interface jives with me alot because js is dynamic so I can alter my interface code as I play the game. in a sense, after a while all things will become so automatic, that in the end, I'm not even watching the game, but programming the entire time. just responding blindly (ie without game graphics) to conditions and situations as queried by my interface.
+
+(lord of the command)
+
+### 2023-04-04 01:21 - spectator instant replay
+
+I notice often times which watching various casts, that many things often times happen at once, and the caster is like "oops, looks like there was a nuke there we missed" ... or, perhaps two or more fronts in an attack are happening with with quite significant things happening.
+
+for making videos especially, it'd be cool to have a way to go back and see that missed moment, especially when there's a bit of a lull in the action. like, you know how in football games, they go and show the same play from various different angles -- ensuring that you can see the most important bits. football is significantly easier though as there's just one ball to keep track of, so it'd be cool for the caster to see a sort of heatmap for action, and the ability for them to define for theirselves notifications like "going t2", "first adv fusion", "nuke launch", etc. so the caster (prolly on another screen) can be getting these tips.
+
+another thing that I find really leaving to be desired is in the cinematic mode, it removes all of the healthbars, so it's hard te tell (especially for the caster) how much damage is actually being done on a large unit. maybe, it'd be cool to get an option to restrict healthbars in cinematic modes to only units > some hp in size (exclding all the small units' bars), or to be able to select some units with the mouse and show their bars (something like that). the other major thing about cinematic mode is the camera is not very smooth. it's pretty rigid and doesn't mave a "glideing" feel to it. I'm not sure how to improve that, so maybe ask michael bay, not me.
+
+### 2023-04-04 01:34 - querying and stats
+
+the stats panel, while extremely informative is a wall of text. as a spectator (or symbolic commander) I will want to be able to run queries (either like sql or json query format) to the game to see stats: per camera, per control group (of players I can see), of an entire team, and of the world.
+
+so, for example, while it is really nice getting those econ bars on the right side, it'd be much better to show it in a graph (like sc2), and also having queries would make it possible get those combat reports after a batter (SELECT ... from units WHERE died > TIME() - 50s) something like that. you know -- cause if the caster can handle a spreadsheet, they should be able to make up the graphics they want to show while casting (maybe could also use electron, so CSS styling is possible and easy for a caster to get a competent designer if they want to do something super fancy)
+
+querying is also important for the players too because I imagine I'll want to set some notifications for myself when playing if the queries notice something on the battlefield that I didn't see -- like a nuke or an incoming attack or whatever.
