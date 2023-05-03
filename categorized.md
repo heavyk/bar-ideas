@@ -22,6 +22,8 @@
   - with the colour of the person that gave the unit
   - the highlight should continue until it's clicked
   - if I click on the ("you've received new units") notification, it should centre the viewport on the unit(s).
+- easy way to send units back to a dc'd player
+  - or even make it standard to take them back over when reconnecting
 
 ### priorities
 
@@ -64,3 +66,10 @@ this feature is just a list of patrol routes that are stored. the idea is that u
   - cons to patrol base
   - bombers to sit on ground
   - etc.
+
+### moar options
+
+- player list reduce name to just colour square (to take up less horizontal space)
+- graphs
+  - metal reclaimed
+  - units rezed
